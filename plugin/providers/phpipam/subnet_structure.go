@@ -150,7 +150,7 @@ func resourceFirstFreeSubnetSchema() map[string]*schema.Schema {
 			v.Computed = true
 		case k == "custom_fields":
 			v.Optional = true
-			v.Computed = true
+			v.Computed = false
 		case resourceSubnetOptionalFields.Has(k):
 			v.Optional = true
 			v.Computed = true
